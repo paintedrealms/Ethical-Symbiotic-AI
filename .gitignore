@@ -1,1 +1,66 @@
+# 🐍 Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest.json
 
+# 🔐 Security & introspection
+logs/
+introspection_logs/
+*.trace.json
+*.audit.json
+*.enc
+*.key
+*.pem
+
+# 📦 Environment & dependency files
+.env
+.env.*
+*.db
+*.sqlite3
+*.lock
+*.bak
+
+# 🧪 Test artifacts
+.coverage
+htmlcov/
+*.log
+*.tmp
+*.test.json
+*.test.yaml
+
+# 📄 Schema overlays
+schemas/overlay_*.json
+schemas/overlay_*.yaml
+
+# 📁 OS-specific
+.DS_Store
+Thumbs.db
+
+# 🚀 Deployment
+.vscode/
+.idea/
+*.swp
+*.swo
+*.orig
+*.rej
+
+# 📜 Documentation builds
+/site/
+*.md.bak
+*.md~*
+
+# 🧪 Optional: ignore generated diagrams
+diagrams/*.png
+diagrams/*.svg
+diagrams/*.drawio
+
+# 🧠 AI-generated artifacts (optional)
+*.gpt.md
+*.copilot.md

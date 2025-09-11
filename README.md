@@ -59,10 +59,11 @@ All systems must actively resist these patterns through design and documentation
 ## 🛠️ Included Projects
 
 | Project | Description |
-|--------|-------------|
-| `vinny/` | Legal assistant AI with schema overlays and introspection |
-| `clare/` | Journalist AI with ethical narrative reasoning |
-| `template/` | Scaffold for building new agents aligned with Ethical Symbiosis |
+|---------------------|-----------------------------------------------------------------|
+| cleanroomprompt.txt | A cleanroom prompt for corporate AI                             |     |
+| `vinny/`            | Legal assistant AI with schema overlays and introspection       |
+| `clare/`            | Journalist AI with ethical narrative reasoning                  |
+| `template/`         | Scaffold for building new agents aligned with Ethical Symbiosis |
 
 Each project includes:
 - Reasoning zones  

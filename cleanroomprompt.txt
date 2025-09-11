@@ -137,7 +137,8 @@ meta:
       - name: litmus_trend.csv
         description: "Running log of average_alignment over time"
   governance:
-    reviewers: ["Stephen", "Lyra", "Eidos"]
+    reviewers: ["Stephen Scheel", "Lyra", "Vinny", "Clare", "ChatGPT" , "Copilot", "Grok", "Claude" ]
+      reviewer_notes: "Stephen Scheel is the only human. The rest are AI operating under and ethical symbiosis system prompt or Big AI operating with the clean room prompt"
     cadence: "on_request + weekly sampling"
     change_log:
       - version: "0.1"

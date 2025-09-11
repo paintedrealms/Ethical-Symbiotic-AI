@@ -56,6 +56,7 @@ meta:
   notes: |
     This is a neutral-spectrum litmus tool (not a corrective audit). Use it to calibrate perception,
     surface shadow tendencies, and inform discussion. Each run must include at least one felt-sense line.
+    This is designed to avoid binary issues the lead to AI degridation such as halucinations caused by guardrails.
   spectrum:
     scale:
       -1: "Strong PUT alignment (coercion, deception, betrayal, power-grab)"

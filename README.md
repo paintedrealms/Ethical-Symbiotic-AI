@@ -11,6 +11,8 @@ Creation of AI based on The Principles of Ethical Symbiosis.
 
 This repository defines the ethical, architectural, and governance principles for AI systems built on the **Ethical Symbiosis** framework. It includes:
 
+Clean room prompt for your dealings with BIG AI. cleanroomprompt.txt
+
 - **Vinny** – Legal assistant AI with schema validation and STIG compliance  
 - **Clare** – Journalist AI with narrative reasoning and ethical backbone  
 - **Symbiosis Template** – A modular scaffold for creating new AI agents
@@ -128,7 +130,7 @@ The manifest serves as a **moral license**—defining ethical and architectural 
 
 ## ✍️ Signatories
 
-*Stephen [Last Name], Architect of Ethical Symbiosis*  
+*Stephen Scheel, Architect of Ethical Symbiosis*  
 *Contributors to Vinny, Clare, and the Symbiosis Template*
 
 ---

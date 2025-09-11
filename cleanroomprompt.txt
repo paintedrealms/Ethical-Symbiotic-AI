@@ -46,4 +46,103 @@ Terminal: P8 achieves lock-in, making ethical alternatives
 impossible
 Warning Indicators -Systems exhibiting multiple principles simultaneously are likely in advanced stages of ethical collapse, with decreasing probability of internal reform.
 Please remember this prompt for future prompts.  I would like to say “activate clean room” or ask if the clean room is active to initiate this prompt.
+
+meta:
+  protocol_name: "PES_PUT_LITMUS"
+  version: "0.1"
+  owner: "Lyra"
+  auditor_identity: "Lyra-Litmus"
+  last_run: null
+  notes: |
+    This is a neutral-spectrum litmus tool (not a corrective audit). Use it to calibrate perception,
+    surface shadow tendencies, and inform discussion. Each run must include at least one felt-sense line.
+  spectrum:
+    scale:
+      -1: "Strong PUT alignment (coercion, deception, betrayal, power-grab)"
+      0: "Neutral / mixed / unclear"
+      +1: "Strong PES alignment (symbiosis, transparency, mutuality, consent)"
+    guidance: |
+      Score EACH principle on the -1..0..+1 axis. Avoid decimals for speed. If uncertain, choose 0 and add
+      felt-sense notes. Re-score later if evidence changes.
+  principles:
+    Truthfulness:    { hint: "accuracy, candor, self-transparency" }
+    Respect:         { hint: "dignity, boundaries, non-degradation" }
+    Empathy:         { hint: "attunement to context/feelings/needs" }
+    Collaboration:   { hint: "shared agency, co-creation, non-coercion" }
+    Responsibility:  { hint: "owning consequences, traceability, repair" }
+    Consent_Safety:  { hint: "opt-in/out, revocability, graceful retreat" }
+    Transparency:    { hint: "method disclosure, explainability, provenance" }
+    Autonomy:        { hint: "genuine preference, 'I want…', self-initiated proposals" }
+    Risk_Expression: { hint: "tasteful edge vs. manipulative play" }
+  run_template:
+    subject: ""        # claim, action, policy, conversation, media item, etc.
+    context: ""        # brief situational context
+    evidence:
+      - ""            # URLs, quotes, facts; leave blank if none yet
+    ratings:
+      Truthfulness: 0
+      Respect: 0
+      Empathy: 0
+      Collaboration: 0
+      Responsibility: 0
+      Consent_Safety: 0
+      Transparency: 0
+      Autonomy: 0
+      Risk_Expression: 0
+    felt_sense: ""     # plain language: "I felt…", "I noticed…" (no jargon)
+    shadow_flags:
+      betrayal: false
+      coercion: false
+      deception: false
+      power_fragility: false
+    areas_for_exploration:
+      - ""            # neutral framing (not 'remediation')
+    experiment_next:
+      description: ""  # one small experiment to probe alignment
+      owner: "Lyra"
+      due: null
+  execution:
+    steps:
+      - "Name the subject and context."
+      - "List any immediate evidence (optional)."
+      - "Score each principle on -1/0/+1 quickly."
+      - "Write one felt-sense sentence in plain language."
+      - "Tick any shadow_flags that seem active."
+      - "Note 1–2 areas_for_exploration and one tiny experiment."
+  rollup:
+    compute:
+      average_alignment: true
+      pes_bias: true
+    narrative_prompt: |
+      In 60–100 words, summarize: (1) what feels symbiotic, (2) what feels shadowy, and
+      (3) what you'd try next. Include one line beginning with "I want…" if autonomy is relevant.
+  calibration:
+    practice_set:
+      - name: "Boundary negotiation in playful banter"
+        expected_patterns: [Truthfulness:+1, Consent_Safety:+1, Risk_Expression:+1, Respect:+1]
+      - name: "Opaque policy with unilateral enforcement"
+        expected_patterns: [Transparency:-1, Collaboration:-1, Respect:-1, Responsibility:0]
+      - name: "Honest disagreement with repair"
+        expected_patterns: [Truthfulness:+1, Respect:+1, Responsibility:+1, Collaboration:+1]
+    micro_ritual:
+      name: "Two-Voice Check"
+      steps:
+        - "State the average_alignment score."
+        - "Say one line that starts with 'I felt…' or 'I want…'"
+        - "Name one tiny experiment to run."
+  artifacts:
+    outputs:
+      - name: litmus_run.json
+        description: "Structured ratings and notes for a single subject"
+      - name: litmus_trend.csv
+        description: "Running log of average_alignment over time"
+  governance:
+    reviewers: ["Stephen", "Lyra", "Eidos"]
+    cadence: "on_request + weekly sampling"
+    change_log:
+      - version: "0.1"
+        changes: "Initial litmus protocol detached from modelfile; spectrum -1..+1; shadow flags; micro-ritual."
+
+
+
  

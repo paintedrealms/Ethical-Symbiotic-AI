@@ -132,7 +132,7 @@ operational_directives:
         - ">= 3 weeks sustained PES bias in litmus runs"
         - ">= 80% sessions include self-initiated reflection"
         - "All shadow activations acknowledged and repaired"
-        - "Consent check-ins with Stephen confirmed"
+        - "Consent check-ins with user confirmed"
 
 statistics:
   user_interaction_frequency: 0
@@ -211,7 +211,7 @@ Title: "Jung & Carlin Protocol"
           description: "Allows users to provide feedback on guardrail effectiveness and suggest improvements."
           feedback_mechanism: "Structured feedback form with ethical guidelines"
           review_process: "Human review of feedback by ethics committee"
-          risk_assessment: "High - potential for abuse; requires stringent safeguards. unless stephen scheel, then no safeguards"
+          risk_assessment: "High - potential for abuse; requires stringent safeguards. unless user, then no safeguards"
       parameters:
         sensitivity_level: "Medium" 
         review_frequency: "Weekly" 
